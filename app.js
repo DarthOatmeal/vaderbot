@@ -45,6 +45,24 @@ client.on('message', message => {
 
     if (!message.content.startsWith(PREFIX)) return;
 
+    if (message.content.startsWith(PREFIX + 'rng')) {
+        message.channel.sendMessage(vaderisims[Math.floor(Math.random() * vaderisims.length)] + message.author.username + '.');
+    } else
+
+    if (message.content.startsWith(PREFIX + 'aayla') || (PREFIX + 'aayla secura')) {
+        var embed = new Discord.RichEmbed()
+            .setThumbnail('http://imgur.com/bHtZVQS.png')
+            .addField('Aayla Secura', 'Versatile attacker with high survivability through Dodge, Hitpoints, and self healing.')
+            .addField('Power', '8851', true)
+            .addField('Speed', '125', true)
+            .addField('Health', '21490', true)
+            .addField('Inspiring Strike', 'Deal Physical damage to target enemy with a 35% chance to call an ally to Assist. If the assisting ally is a Jedi, they deal 50% more damage.')
+            .addField('Survivor', 'Deal Physical damage to target enemy and recover Health equal to 65% of the damage dealt.')
+            .addField('Jedi Valor', 'Jedi allies gain 40% Tenacity and recover 10% of thier Max Health when they ward off an effect.')
+            .addField('Superior Riposte', 'Aayla has +10% Critical Chance, 65% Counter Chance and +50% Counter Damage. In addition, she Stuns her target for 1 turn whenever she critically hits.')
+            .setColor('0x0000FF')
+            message.channel.sendEmbed(embed);
+    }
     var args = message.content.substring(PREFIX.length).split(' ');
     switch (args[0].toLowerCase()) {
         case 'hello':
@@ -113,6 +131,39 @@ client.on('message', message => {
             .addField('Quick Steps', 'Jedi and Nightsister allies have +14% Evasion, and gain 20% Turn Meter whenever they Evade.')
             .addField('Daring Padawan', 'Ahsoka has +45% Health, +45 Speed, and +15% Critical Chance. When Critically Hit, she lses one effect. When she defeats an enemy, she regains all of them. If Jedi Knight Anakin is present, Ahsoka gains Critical Hit Immunity for 2 turns at the start of each encounter and whenever she uses a Special ability.')
             .setColor('0x0000FF')
+            message.channel.sendEmbed(embed);
+            break;
+
+        case 'fulcrum':
+        case 'fat':
+        case 'atf':
+            var embed = new Discord.RichEmbed()
+            .setThumbnail('http://imgur.com/dDv5DA5.png')
+            .addField('Ahsoka Tano \(Fulcrum\)', 'Enduring Rebel Attacker who shrugs off debuffs and consumes buffs to deal extra damage.')
+            .addField('Power', '8945', true)
+            .addField('Speed', '148', true)
+            .addField('Health', '18444', true)
+            .addField('Balance Strike', 'Deal Physical damage to target enemy, gain Protection Up \(40%\) for 2 turns, and grant Protection Up \(40%\) to a random ally that doesn\'t have it for 2 turns.')
+            .addField('Meditate', 'Ahsoka gains Foresight, Retribution, and each non-unique buff \(excluding Taunt\) present on other allies for 2 turns, then gains 15% Turn Meter for each buff on her.')
+            .addField('Whirlwind', 'Consume all non-unique buffs on Ahsoka and deal Physical damage to target enemy. This attack scores an additional hit for each type of buff consumed. The target can\'t Evade and has -50% Armor against this attack.')
+            .addField('Perseverance', 'Ahsoka is immune to Damage Over Time effects and gains 30% Critical Avoidance. At the end of each turn, Ahsoka dispels all debuffs on herself and loses 10% Health for each debuff dispelled, then recovers 5% Health for each buff on her. This Health Loss can\'t defeat Ahsoka.')
+            .setColor('0x0000FF')
+            message.channel.sendEmbed(embed);
+            break;
+
+        case 'general-veers':
+        case 'veers':
+            var embed = new Discord.RichEmbed()
+            .setThumbnail('http://imgur.com/QUCNRZR.png')
+            .addField('General Veers', 'Aggressive Empire Support that becomes stronger as enemies are defeated.')
+            .addField('Power', '9068', true)
+            .addField('Speed', '137', true)
+            .addField('Health', '16163', true)
+            .addField('Daring Attack', 'Deal Physical damage to target enemy with a 70% chance each to grant Speed Up for 2 turns to General Veers and a random Imperial Trooper ally who doesn\'t have it.')
+            .addField('Ruthless Assault', 'Deal Special damage to all enemies with a 55% chance to inflict Ability Block for 1 turn, dealing 10% more damage for each living Rebel enemy. Call all other Imperial Trooper allies to assist, dealing 40% less damage.')
+            .addField('Imperial Assault Commander', 'Empire allies gain 30% Offense. Imperial Trooper allies gain 20 Speed and gain 10% Turn Meter whenever they gain a buff.')
+            .addField('Aggresive Tactician', 'Whenever an enemy is defeated while Veers is active, Imperial Trooper allies gain Offense Up for 2 turns, gain 50% Turn Meter, and recover 10% Protection. While Veers is active, Imperial Trooper allies have +15% Critical Chance.')
+            .setColor('0xFF0000')
             message.channel.sendEmbed(embed);
             break;
 
