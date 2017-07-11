@@ -1,0 +1,14 @@
+{
+  "name": "vaderbot",
+  "version": "1.0.0",
+  "description": "A SWGOH helper Bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oatmeal",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
