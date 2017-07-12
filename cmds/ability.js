@@ -109,7 +109,17 @@ module.exports.run = async (client, message, args) => {
             message.author.send({embed: embed});
     } else
 
-
+    if (args[0] === 'bistan') {
+        let embed = new Discord.RichEmbed()
+            .setThumbnail('http://imgur.com/OBDOApm.png')
+            .addField('Bistan', 'Wild Rebel Attacker who gains Frenzy, debuffs enemies, and removes Turn Meter.')
+            .addField('Blast\'Em', 'Deal Physical damage to target enemy with a 70% chance to inflict Damage Over Time for 3 turns.')
+            .addField('Frenzy', 'Bistan gains Frenzy for 4 turns and all other allies gain 20% Turn Meter. Frenzy: Whenever another ally uses a Special ability, this unit gains 100% Turn Meter.')
+            .addField('Gunner Tactics', 'Deal Physical damage to target enemy and remove Turn Meter equal to Bistan\'s Potency.')
+            .addField('Amped Up', 'Bistan gains 10% Potency for each Rebel ally and each debuffed enemy.')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
 
 
 
