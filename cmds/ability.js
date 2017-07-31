@@ -121,6 +121,18 @@ module.exports.run = async (client, message, args) => {
             message.author.send({embed: embed});
     } else
 
+    if (args[0] === 'boba') {
+            let embed = new Discord.RichEmbed()
+                .setThumbnail('http://i.imgur.com/cmWpFqI.png')
+                .addField('Boba Fett', 'Ruthless Bounty Hunter Attacker who ignores Taunts, Ability Blocks and self-revives.')
+                .addField('EE-3 Carbine', 'Deal Physical damage to target enemy with a 50% chance (doubled against Scoundrels) to attack again. Each attack has a 70% chance to inflict Damage Over Time for 2 turns.')
+                .addField('Death From Above', 'Deal Physical damage to all enemies with an 80% chance to inflict Ability Block for 1 turn and a 50% chance to inflict Damage Over Time for 2 turns. Inflict Ability Block on the selected target for 2 turns.')
+                .addField('Execute', 'Deal Physical damage to target enemy and dispel all status effects on them. Deal 30% more damage for each effect dispelled. Enemies defeated by this ability can\'t be revived. Reduce all cooldowns by 1 on a finishing blow. This attack can\'t be Evaded.')
+                .addField('Dead or Alive', 'All allies gain 50% Critical Damage and 10% Critical Chance. Bounty Hunter allies gain 15 Speed for each debuffed enemy, gain Max Health equal to 50% of the total Potency of all Bounty Hunter allies, and gain 15% Turn Meter whenever a Thermal Detonator explodes.')
+                ,addField('Bounty Hunter\'s Resolve', 'At the start of battle, and whenever he defeats an enemy, Boba Fett recovers 100% Protection and gains Bounty Hunter\'s Resolve until he is defeated. Bounty Hunter\'s Resolve: Boba Fett ignores Taunts during his turn. When defeated, revive at 100% Health. Can\'t be Dispelled or Prevented.')
+                .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
 
 
 
@@ -148,11 +160,6 @@ module.exports.run = async (client, message, args) => {
             .setColor('0xFF0000')
             message.author.send({embed: embed});
     } else
-
-
-
-
-
 
 
     if (args[0] === 'zam' || args[0] === 'zam' && args[1] === 'wesell') {
