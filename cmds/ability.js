@@ -4,119 +4,960 @@ module.exports.run = async (client, message, args) => {
 
     if(args[0] === 'aayla' || args[0] === 'aayla' && args[1] === 'secura') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/bHtZVQS.png')
-            .addField('Aayla Secura', 'Versatile attacker with high survivability through Dodge, Hitpoints, and self healing.')
-            .addField('Inspiring Strike', 'Deal Physical damage to target enemy with a 35% chance to call an ally to Assist. If the assisting ally is a Jedi, they deal 50% more damage.')
-            .addField('Survivor', 'Deal Physical damage to target enemy and recover Health equal to 65% of the damage dealt.')
-            .addField('Jedi Valor', 'Jedi allies gain 40% Tenacity and recover 10% of thier Max Health when they ward off an effect.')
-            .addField('Superior Riposte', 'Aayla has +10% Critical Chance, 65% Counter Chance and +50% Counter Damage. In addition, she Stuns her target for 1 turn whenever she critically hits.')
+            .setAuthor('Aayla Secura', 'http://imgur.com/bHtZVQS.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/aayla-secura/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Critical Chance\n- Critical Chance\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
     
     if(args[0] === 'ackbar' || args[0] === 'admiral' && args[1] === 'ackbar') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/YmjNJSt.png')
-            .addField('Admiral Ackbar', 'Rebel Support that can Dispel debuffs and grant allies extra turns.')
-            .addField('Quick Shot', 'Deal Physical damage to target enemy with a 55% chance to gain 45% Turn Meter.')
-            .addField('It\'s a Trap!', 'Dispel all negative status effects from all allies. Each ally recovers 9% of thier Max Health for each effect dispelled this way. Admiral Ackbar has a 25% chance to gain 40% Turn Meter.')
-            .addField('Tactical Genius', 'Ackbar grants each ally the Tactical Genius effect. The first ally to use a Special ability while they have this effect gains 100% Turn Meter and recovers 30% of thier Max Health. Tactical Genius ends whenever an ally triggers this effect or at the end of Ackbar\'s next turn.')
-            .addField('Rebel Coordination', 'Rebel allies have +25 speed and +10% Tenacity. In addition, whenever an ally uses an ability that isn\'t an attack, they call a Rebel ally to Assist.')
+            .setAuthor('Admiral Ackbar', 'http://imgur.com/YmjNJSt.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/admiral-ackbar/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Tenacity\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'ahsoka' || args[0] === 'ahsoka' && args[1] === 'tano' || args[0] === 'snips') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/pHRl8nU.png')
-            .addField('Ahsoka Tano', 'Versatile Attacker with healing and superior stats as long as she can avoid suffering Critical Hits.')
-            .addField('Energetic Slash', 'Deal Physical damage to target enemy and Ahsoka recovers Health equal to 20% of her Max Health, increased to 30% on a Critical Hit.')
-            .addField('Protective Maneuver', 'Deal Physical damage to target enemy. If the target had 50% Health or more, all allies recover Health equal to 30% of Ahsoka\'s Max Health; otherwise, thisattack deals 50% more damage.')
-            .addField('Quick Steps', 'Jedi and Nightsister allies have +14% Evasion, and gain 20% Turn Meter whenever they Evade.')
-            .addField('Daring Padawan', 'Ahsoka has +45% Health, +45 Speed, and +15% Critical Chance. When Critically Hit, she lses one effect. When she defeats an enemy, she regains all of them. If Jedi Knight Anakin is present, Ahsoka gains Critical Hit Immunity for 2 turns at the start of each encounter and whenever she uses a Special ability.')
+            .setAuthor('Ahsoka Tano', 'http://imgur.com/pHRl8nU.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ahsoka-tano/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'fulcrum' || args[0] === 'fat' || args[0] === 'atf' || args[0] === 'ashla') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/dDv5DA5.png')
-            .addField('Ahsoka Tano \(Fulcrum\)', 'Enduring Rebel Attacker who shrugs off debuffs and consumes buffs to deal extra damage.')
-            .addField('Cruel Strike', 'Deal Physical damage to target enemy with a 35% chance to Stun for 1 turn.')
-            .addField('Endless Wrath', 'Deal Special damage to all enemies and refresh all cooldowns on a finishing blow.')
-            .addField('Whirlwind', 'Consume all non-unique buffs on Ahsoka and deal Physical damage to target enemy. This attack scores an additional hit for each type of buff consumed. The target can\'t Evade and has -50% Armor against this attack.')
-            .addField('Perseverance', 'Ahsoka is immune to Damage Over Time effects and gains 30% Critical Avoidance. At the end of each turn, Ahsoka dispels all debuffs on herself and loses 10% Health for each debuff dispelled, then recovers 5% Health for each buff on her. This Health Loss can\'t defeat Ahsoka.')
+            .setAuthor('Ahsoka Tano \(Fulcrum\)', 'http://imgur.com/dDv5DA5.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ahsoka-tano-fulcrum/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'asajj' || args[0] === 'ventress' || args[0] === 'asajj' && args[1] === 'ventress') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/0wWJvKI.png')
-            .addField('Asajj Ventress', 'Nightsister controller with self healing who generates attack power on enemy death.')
-            .addField('Balance Strike', 'Deal Physical damage to target enemy, gain Protection Up \(40%\) for 2 turns, and grant Protection Up \(40%\) to a random ally that doesn\'t have it for 2 turns.')
-            .addField('Meditate', 'Ahsoka gains Foresight, Retribution, and each non-unique buff \(excluding Taunt\) present on other allies for 2 turns, then gains 15% Turn Meter for each buff on her.')
-            .addField('Nightsister Swiftness', 'Nightsister allies gain 28 Speed, gain 50% Turn Meter when they fall below 100% Health, and have a 50% chance to remove 20% Turn Meter when they damage an enemy. This Turn Meter removal can\'t be Resisted.')
-            .addField('Rampage', 'Whenever an ally or enemy is defeated, Asajj Ventress gains Offense Up and Critical Chance Up for two actions and gains 50% Turn Meter. Asajj Ventress gains 15 Speed for each enemy with no buffs.')
+            .setAuthor('Asajj Ventress', 'http://imgur.com/0wWJvKI.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/asajj-ventress/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
             .setColor('0xFF0000')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'b2' || args[0] === 'battle' && args[1] === 'droid') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/kOuiAfw.png')
-            .addField('B2 Super Battle Droid', 'Droid Tank that relentlessly punishes enemies that evade attacks or damage allies.')
-            .addField('Heavy Arms', 'Deal Physical damage to target enemy and inflict Evasion Down for 2 turns.')
-            .addField('Mow Down', 'Deal Physical damage to all enemies and Dispel all positive status effects on them, with a 65% chance to also inflict Buff Immunity for 2 turns \(applied before damage\).')
-            .addField('Relentless Barrage', 'B2 has a 40% chance to gain 100% Turn Meter whenever another ally is Evaded or damaged by an attack.')
+            .setAuthor('B2 Super Battle Droid', 'http://imgur.com/kOuiAfw.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/b2-super-battle-droid/')
+            .addField('Mods', '**Primary (HK-47 lead):**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Accuracy\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency\n\n**Primary:**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Accuracy\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
             .setColor('0xFF0000')
             message.author.send({embed :embed});
     } else
 
     if (args[0] === 'barriss' || args[0] === 'barriss' && args[1] === 'offee') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/sDOwrIL.png')
-            .addField('Barriss Offee', 'Jedi Healer that can balance party Health and Dispel allied Jedi frequently.')
-            .addField('Invigorating Strike', 'Deal Physical damage to target enemy with a 45% chance for all allies to recover 6% of Barriss Offee\'s Max Health.')
-            .addField('Force Healer', 'All allies have their current Health percentages equalized. \(Health equalizing effects ignore Healing Immunity\). Then, each ally recovers 15% of their Max Health and gains Defense Up for 2 turns.')
-            .addField('No One Left Behind', 'Jedi allies gain 20% Max Health, and other allies gain half that amount. In addition, at the start of each of their turns, Jedi allies heal for 8% of Barriss Offee\'s Max Health, and other allies heal half that amount.')
-            .addField('Swift Recovery', 'At the end of each of her turns, Barriss Dispels all debuffs from the debuffed ally with the lowest Health and gains 10% Turn Meter for each effect removed. Whenever an ally is Critically Hit, that ally recovers 20% of their Max Health and Barriss gaons 10% Turn Meter. This effect is disabled while Barriss is defeated.')
+            .setAuthor('Barriss Offee', 'http://imgur.com/sDOwrIL.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/barriss-offee/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Health\n**Circle:**\n- Health\n**Cross:**\n- Health')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'baze' || args[0] === 'baze' && args[1] === 'malbus') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/VrT5LNX.png')
-            .addField('Baze Malbus', 'Fearsome Rebel Tank who Taunts, dispels buffs, and inflicts debuffs.')
-            .addField('Heavy Repeater Cannon', 'Deal Physical damage to target enemy with a 70% chance to inflict Speed Down for 3 turns. If Chirrut Imwe is present, he gains 10% Turn Meter.')
-            .addField('Unload', 'Deal Physical damage to all enemies and Dispel all buffs on them. Empire enemies and enemies who were not buffed take bonus damage equal to 25% of their Max Health. If Chirrut Imwe is present, he is called to Assist.')
-            .addField('Fierce Reprisal', 'Deal Physical damage to target enemy and dispel all buffs on them. For each buff dispelled, inflict the opposite debuff, if any, for 2 turns.')
-            .addField('For Jedha', 'Baze Malbus gains Taunt and Retribution for 1 turn at the start of each encounter, whenever an enemy is defeated, and whenever Chirrut Imwe falls below 100% Health. Baze Malbus gains 5% Turn Meter whenever an enemy gains a buff.')
-            .addField('Dauntless Courage', 'Baze Malbus gains Max Health equal to 20% of his Max Health. Chirrut Imwe also gains that much Max Health.')
+            .setAuthor('Baze Malbus', 'http://imgur.com/VrT5LNX.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/baze-malbus/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'biggs' || args[0] === 'biggs' && args[1] === 'darklighter') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/9uLGhdJ.png')
-            .addField('Biggs Darklighter', 'Rebel Support with Critical Hit synergies who calls Assists.')
-            .addField('Cadet\'s Aim', 'Deal Physical damage to target enemy with a 50% chance to gain Critical Chance Up for 2 turns. On a Criical Hit grant a random ally Critical Damage Up for 2 turns.')
-            .addField('Comrade-in-Arms', 'Deal Physical damage to target enemy and call an Assist. All attacks have 75% more Critical Chance.')
-            .addField('Adrenaline Rush', 'Biggs Darklighter gains 100% Turn Meter and Evasion Up for 2 turns after surviving any damage from an Empire enemy or a Critical Hit from any enemy.')
+            .setAuthor('Biggs Darklighter', 'http://imgur.com/9uLGhdJ.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/biggs-darklighter/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
 
     if (args[0] === 'bistan') {
         let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/OBDOApm.png')
-            .addField('Bistan', 'Wild Rebel Attacker who gains Frenzy, debuffs enemies, and removes Turn Meter.')
-            .addField('Blast\'Em', 'Deal Physical damage to target enemy with a 70% chance to inflict Damage Over Time for 3 turns.')
-            .addField('Frenzy', 'Bistan gains Frenzy for 4 turns and all other allies gain 20% Turn Meter. Frenzy: Whenever another ally uses a Special ability, this unit gains 100% Turn Meter.')
-            .addField('Gunner Tactics', 'Deal Physical damage to target enemy and remove Turn Meter equal to Bistan\'s Potency.')
-            .addField('Amped Up', 'Bistan gains 10% Potency for each Rebel ally and each debuffed enemy.')
+            .setAuthor('Bistan', 'http://imgur.com/OBDOApm.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/bistan/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'boba' || args[0] === 'boba' && args[1] === 'fett') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Boba Fett', 'http://imgur.com/BmEYOAG.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/boba-fett/')
+            .addField('Mods', '**Primary (Leader):**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary (Attacker):**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary (Support):**\n- Potency\n- Potency\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'bodhi' || args[0] === 'bodhi' && args[1] === 'rook') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Bodhi Rook', 'http://imgur.com/mBOzoWI.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/bodhi-rook/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'cad' || args[0] === 'cad' && args[1] === 'bane') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Cad Bane', 'http://imgur.com/E2QynhG.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/cad-bane/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'phasma' || args[0] === 'captain' && args[1] === 'phasma') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Captain Phasma', 'http://imgur.com/E9Woidk.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/captain-phasma/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'cassian' || args[0] === 'cassian' && args[1] === 'andor') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Cassian Andor', 'http://imgur.com/2nTls2d.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/cassian-andor/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'cody') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('CC-2224 Cody', 'http://imgur.com/ITro3sI.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/cc-2224-cody/')
+            .addField('Mods', '**Primary (Leader):**\n- Critical Damage\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary (Attacker):**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'chirpa' || args[0] === 'chief' && args[1] === 'chirpa') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Chief Chirpa', 'http://imgur.com/OrV0tZg.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/chief-chirpa/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'nebit' || args[0] === 'chief' && args[1] === 'nebit') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Chief Nebit', 'http://imgur.com/miJjY6k.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/chief-nebit/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Defense\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'chirrut' || args[0] === 'chirrut' && args[1] === 'imwe') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Chirrut Imwe', 'http://imgur.com/xJ1NIKD.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/chirrut-imwe/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'chopper') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Chopper', 'http://imgur.com/Tz6EoP3.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/chopper/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Defense\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed / Protection\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'clone' && args[1] === 'sergeant') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Clone Sergeant - Phase 1', 'http://imgur.com/QmCnpo2.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/clone-sergeant-phase-i/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'chewbacca' || args[0] === 'clone' && args[1] === 'wars' && args[2] === 'chewbacca') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Clone Wars Chewbacca', 'http://imgur.com/ui3xZUB.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/clone-wars-chewbacca/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'cup' || args[0] === 'coruscant' && args[1] === 'underworld' && args[2] === 'police' || args[0] === 'underworld' && args[1] === 'police') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Coruscant Underworld Police', 'http://imgur.com/WNm8BtH.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/coruscant-underworld-police/')
+            .addField('Mods', '**Primary:**\n- Potency\n- Potency\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Defense\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'dooku' || args[0] === 'count' && args[1] === 'dooku') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Count Dooku', 'http://imgur.com/z2Xu5TW.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/count-dooku/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Tenacity\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+     if (args[0] === 'echo') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('CT-21-0408 Echo', 'http://imgur.com/KQXZTO6.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ct-21-0408-echo/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'fives') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('CT-5555 Fives', 'http://imgur.com/taU8g35.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ct-5555-fives/')
+            .addField('Mods', '**Primary:**\n- Defense\n- Defense\n- Defense\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'rex') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('CT-7567 Rex', 'http://imgur.com/ki6KEWC.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ct-7567-rex/')
+            .addField('Mods', '**Primary (Leader):**\n- Tenacity\n- Tenacity\n- Tenacity\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity\n\n**Primary (Support):**\n- Speed\n- Tenacity\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'maul' || args[0] === 'darth' && args[1] === 'maul') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Darth Maul', 'http://imgur.com/foArZ3F.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/darth-maul/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'nihilus' || args[0] === 'darth' && args[1] === 'nihilus') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Darth Nihilus', 'http://imgur.com/uyf1Kx0.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/darth-nihilus/')
+            .addField('Mods', '**Primary (Leader):**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection\n\n**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'sidious' || args[0] === 'darth' && args[1] === 'sidious') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Darth Sidious', 'http://imgur.com/9429LZy.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/darth-sidious/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'vader' || args[0] === 'darth' && args[1] === 'vader') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Darth Vader', 'http://imgur.com/vPbYoSp.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/darth-vader/')
+            .addField('Mods', '**Primary (Palp lead):**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection\n\n**Primary:**\n- Potency\n- Potency\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'dathcha') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Dathcha', 'http://imgur.com/2eZLTZL.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/dathcha/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'death' && args[1] === 'trooper' || args[0] === 'deathtrooper') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Death Trooper', 'http://imgur.com/Cut8jcL.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/death-trooper/')
+            .addField('Mods', '**Primary (Krennic lead):**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary (Palp lead):**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary (Vader lead):**\n- Critical Damage\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'dengar') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Dengar', 'http://imgur.com/ezVa25m.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/dengar/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Critical Chance\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'krennic' || args[0] === 'director' && args[1] === 'krennic') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Director Krennic', 'http://imgur.com/kHCeJ7B.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/director-krennic/')
+            .addField('Mods', '**Primary: (Leader)**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary: (Palp lead)**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection\n\n**Primary: (Vader lead)**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'eeth' || args[0] === 'eeth' && args[1] === 'koth') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Eeth Koth', 'http://imgur.com/Nwey8CX.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/eeth-koth/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'palpatine' || args[0] === 'emperor' && args[1] === 'palpatine') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Emperor Palpatine', 'http://imgur.com/TX1rvQi.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/emperor-palpatine/')
+            .addField('Mods', '**Primary (Leader):**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Protection\n\n**Primary:**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ewok' && args[1] === 'elder') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Ewok Elder', 'http://imgur.com/94azvWg.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ewok-elder/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ewok' && args[1] === 'scout') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Ewok Scout', 'http://imgur.com/pXeU9IT.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ewok-scout/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ezra' || args[0] === 'ezra' && args[1] === 'bridger') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Ezra Bridger', 'http://imgur.com/hLf7Dsi.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ezra-bridger/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'finn') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Finn', 'http://imgur.com/GNkS6Wp.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/finn/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Defense\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'foo' || args[0] === 'first' && args[1] === 'order' && args[2] === 'officer') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('First Order Officer', 'http://imgur.com/J0lxEim.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/first-order-officer/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'fost' || args[0] === 'first' && args[1] === 'order' && args[2] === 'stormtrooper') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('First Order Stormtrooper', 'http://imgur.com/VSYGHK5.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/first-order-stormtrooper/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'fotp' || args[0] === 'first' && args[1] === 'order' && args[2] === 'tie' && args[3] === 'pilot') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('First Order TIE Pilot', 'http://imgur.com/IGcU3ud.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/first-order-tie-pilot/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'gamorrean' && args[1] === 'guard' || args[0] === 'gam' && args[1] === 'guard') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Gamorrean Guard', 'http://imgur.com/xpUq9I4.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/gamorrean-guard/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'gar' && args[1] === 'saxon') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Gar Saxon', 'http://imgur.com/yn7jjqA.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/gar-saxon/')
+            .addField('Mods', '**Primary:**\n- Potency\n- Potency\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'garazeb' && args[1] === 'orrelios' || args[0] === 'zeb' || args[0] === 'garazeb') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Garazeb "Zeb" Orrelios', 'http://imgur.com/V6GBw7t.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/garazeb-zeb-orrelios/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'general' && args[1] === 'grievous' || args[0] === 'grievous') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('General Grievous', 'http://imgur.com/V0mXnhU.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/general-grievous/')
+            .addField('Mods', '**Primary (HK-47 lead):**\n- Critical Damage\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency\n\n**Primary:**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'general' && args[1] === 'kenobi') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('General Kenobi', 'http://imgur.com/ylsuJum.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/general-kenobi/')
+            .addField('Mods', '**Primary:**\n- Tenacity\n- Defense\n- Defense\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'veers' || args[0] === 'general' && args[1] === 'veers') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('General Veers', 'http://imgur.com/QUCNRZR.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/general-veers/')
+            .addField('Mods', '**Primary (Leader):**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Offense\n\nPrimary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'gs' || args[0] === 'geonosian' && args[1] === 'soldier') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Geonosian Soldier', 'http://imgur.com/aTg2EIU.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/geonosian-soldier/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'geonosian' && args[1] === 'spy') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Geonosian Spy', 'http://imgur.com/G8uIbCd.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/geonosian-spy/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'grand' && args[1] === 'admiral' && args[2] === 'thrawn' || args[0] === 'thrawn') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Grand Admiral Thrawn', 'http://imgur.com/T0LE0uG.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/grand-admiral-thrawn/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Tenacity\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'grand' && args[1] === 'master' && args[2] === 'yoda' || args[0] === 'yoda') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Grand Master Yoda', 'http://imgur.com/nwLZBkt.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/grand-master-yoda/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Tenacity\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'grand' && args[1] === 'moff' && args[2] === 'tarkin' || args[0] === 'tarkin') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Grand Moff Tarkin', 'http://imgur.com/tJQmfmf.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/grand-moff-tarkin/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'greedo') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Greedo', 'http://imgur.com/zq7nvnw.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/greedo/')
+            .addField('Mods', '**Primary:**\n- Potency\n- Critical Chance\n- Critical Chance\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offence\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'han' || args[0] === 'han' && args[1] === 'solo') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Han Solo', 'http://imgur.com/m3J1kA7.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/han-solo/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'hera' || args[0] === 'hera' && args[1] === 'syndulla') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Hera Syndulla', 'http://imgur.com/rgNYaD0.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/hera-syndulla/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Tenacity\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'hk-47' || args[0] === 'hk47') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('HK-47', 'http://imgur.com/OGFqeR6.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/hk-47/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'hoth' && args[1] === 'rebel' && args[2] === 'scout') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Hoth Rebel Scout', 'http://imgur.com/bxYNt7U.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/hoth-rebel-scout/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'hoth' && args[1] === 'rebel' && args[2] === 'soldier') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Hoth Rebel Soldier', 'http://imgur.com/5oLqq82.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/hoth-rebel-soldier/')
+            .addField('Mods', '**Primary:**\n- Health\n- Defense\n- Defense\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ig-100' || args[0] === 'ig100' || args[0] === 'magnaguard' || args[0] === 'ig100' && args[1] === 'magnaguard' || args[0] === 'ig-100' && args[1] === 'magnaguard') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('IG-100 MagnaGuard', 'http://imgur.com/FkZSN7D.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ig-100-magnaguard/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ig-86' || args[0] === 'ig86' || args[0] === 'ig86' && args[1] === 'sentinel' && args[2] === 'droid' || args[0] === 'ig-86' && args[1] === 'sentinel' && args[2] === 'droid') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('IG-86 Sentinel Droid', 'http://imgur.com/3DM4rw1.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ig-86-sentinel-droid/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ig-88' || args[0] === 'ig88') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('IG-88', 'http://imgur.com/JVhX1v1.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ig-88/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'ima-gun' && args[1] === 'di' || args[0] === 'ima' && args[1] === 'gun' && ars[2] === 'di') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Ima-Gun Di', 'http://imgur.com/TCGlNfv.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/ima-gun-di/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'isc' || args[0] === 'imperial' && args[1] === 'super' && ars[2] === 'commando') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Imperial Super Commando', 'http://imgur.com/wEMBSzA.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/imperial-super-commando/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'jawa') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jawa', 'http://imgur.com/WSpxUyV.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jawa/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'je') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jawa Engineer', 'http://imgur.com/VcFs2rb.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jawa-engineer/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'js') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jawa Scavenger', 'http://imgur.com/huhSvfy.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jawa-scavenger/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Critical Chance\n- Critical Chance\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'jedi' && args[1] === 'consular') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jedi Consular', 'http://imgur.com/wie7UOc.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jedi-consular/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'jedi' && args[1] === 'knight' && args[2] === 'anakin') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jedi Knight Anakin', 'http://imgur.com/bUXQJ2N.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jedi-knight-anakin/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'jedi' && args[1] === 'knight' && args[2] === 'guardian') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jedi Knight Guardian', 'http://imgur.com/ufbL4Li.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jedi-knight-guardian/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'jyn' || args[0] === 'jyn' && args[1] === 'erso') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Jyn Erso', 'http://imgur.com/WFyDAoC.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/jyn-erso/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Critical Chance\n- Critical Chance\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'k-2so' || args[0] === 'k2so') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('K-2SO', 'http://imgur.com/cvAUmmF.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/k-2so/')
+            .addField('Mods', '**Primary:**\n- Tenacity\n- Tenacity\n- Tenacity\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'kanan' || args[0] === 'kanan' && args[1] === 'jarrus') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Kanan Jarrus', 'http://imgur.com/U22p3WL.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/kanan-jarrus/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Critical Chance\n- Tenacity\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'kit' || args[0] === 'kit' && args[1] === 'fisto') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Kit Fisto', 'http://imgur.com/9MU8gOD.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/kit-fisto/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'kylo' || args[0] === 'kylo' && args[1] === 'ren') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Kylo Ren', 'http://imgur.com/6jgR4Th.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/kylo-ren/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'lando' || args[0] === 'lando' && args[1] === 'calrissian') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Lando Calrissian', 'http://imgur.com/GUOeeAU.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/lando-calrissian/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'lobot') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Lobot', 'http://imgur.com/PftXWTy.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/lobot/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'logray') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Logray', 'http://imgur.com/1EGt5iN.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/logray/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'luke' && args[1] === 'skywalker') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Luke Skywalker', 'http://imgur.com/CYAu4Ry.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/luke-skywalker/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Critical Chance\n- Potency\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'luminara' && args[1] === 'unduli' || args[0] === 'luminara') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Luminara Unduli', 'http://imgur.com/mpcrYaD.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/luminara-unduli/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Health / Protection\n**Circle:**\n- Health / Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'mace' && args[1] === 'windu' || args[0] === 'mace') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Mace Windu', 'http://imgur.com/CsXSQyz.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/mace-windu/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Defense\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'magmatrooper') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Magmatrooper', 'http://imgur.com/rFwotPy.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/magmatrooper/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'mob' && args[1] === 'enforcer') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Mob Enforcer', 'http://imgur.com/hABGveR.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/mob-enforcer/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'nightsister' && args[1] === 'acolyte') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Nightsister Acolyte', 'http://imgur.com/YH0U1KX.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/nightsister-acolyte/')
+            .addField('Mods', '**Primary:**\n- Critical Chance\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'nightsister' && args[1] === 'initiate') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Nightsister Initiate', 'http://imgur.com/DH3aqWO.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/nightsister-initiate/')
+            .addField('Mods', '**Primary:**\n- Defense\n- Defense\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'nute' && args[1] === 'gunray' || args[0] === 'nute') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Nute Gunray', 'http://imgur.com/L6WvYfQ.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/nute-gunray/')
+            .addField('Mods', '**Primary:**\n- Offense\n- Health\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Offense\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'obi-wan' && args[1] === 'kenobi' || args[0] === 'obi' && args[1] === 'wan' && args[2] === 'kenobi' || args[0] === 'old' && args[1] === 'ben') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Obi-Wan Kenobi (Old Ben)', 'http://imgur.com/2QDU3sP.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/obi-wan-kenobi-old-ben/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'old' && args[1] === 'daka') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Old Daka', 'http://imgur.com/bCxYgX9.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/old-daka/')
+            .addField('Mods', '**Primary:**\n- Health\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Protection')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'pao') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Pao', 'http://imgur.com/2ktlMdi.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/pao/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'paploo') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Paploo', 'http://imgur.com/VFvUThf.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/paploo/')
+            .addField('Mods', '**Primary (with Logray):**\n- Defense\n- Tenacity\n- Critical Chance\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Chance / Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity / Protection\n\n**Primary:**\n- Defense\n- Defense\n- Tenacity\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Tenacity / Protection')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'plo' && args[1] === 'koon' || args[0] === 'plo') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Plo Koon', 'http://imgur.com/yMgIWjR.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/plo-koon/')
+            .addField('Mods', '**Primary:**\n- Potency\n- Health\n- Health\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'poe' && args[1] === 'dameron' || args[0] === 'poe') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Poe Dameron', 'http://imgur.com/XjaePkR.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/poe-dameron/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0x0000FF')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'poggle' && args[1] === 'the' && args[2] === 'lesser' || args[0] === 'poggle') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Poggle the Lesser', 'http://imgur.com/23UezZA.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/poggle-the-lesser/')
+            .addField('Mods', '**Primary:**\n- Speed\n- Potency\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Protection\n**Circle:**\n- Protection\n**Cross:**\n- Potency')
+            .setColor('0xFF0000')
+            message.author.send({embed: embed});
+    } else
+
+    if (args[0] === 'princess' && args[1] === 'leia') {
+        let embed = new Discord.RichEmbed()
+            .setAuthor('Princess Leia', 'http://imgur.com/GLAQrlI.png')
+            .setTitle('Ability and Stats here')
+            .setURL('https://swgoh.gg/characters/princess-leia/')
+            .addField('Mods', '**Primary:**\n- Critical Damage\n- Critical Chance\n-\n**Square:**\n- Offense\n**Arrow:**\n- Speed\n**Diamond:**\n- Defense\n**Triangle:**\n- Critical Damage\n**Circle:**\n- Protection\n**Cross:**\n- Offense / Protection')
             .setColor('0x0000FF')
             message.author.send({embed: embed});
     } else
@@ -126,28 +967,18 @@ module.exports.run = async (client, message, args) => {
 
 
 
-    if (args[0] === 'mob' && args[1] === 'enforcer') {
-        let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/hABGveR.png')
-            .addField('Mob Enforcer', 'Scoundrel Tank with enemy debuff ability and a thermal detonator.')
-            .addField('Dirty Fighting', 'Deal Physical damage to target enemy with an 80% chance to inflict Defense Down for 2 turns.')
-            .addField('Thermal Detonator', 'Place a Thermal Detonator on target enemy that explodes after 2 Turns with a 40% chance for Mob Enforcer to gain 25% Turn Meter.')
-            .addField('Underworld Moxie', 'Mob Enforcer gains 15% Max Health for each living Scoundrel ally. In addition, whenever an ally falls below 30% Health, there is a 70% chance that Mob Enforcer will gain Offense Up for 2 turns.')
-            .setColor('0xFF0000')
-            message.author.send({embed: embed});
-    } else
 
-    if (args[0] === 'veers' || args[0] === 'general' && args[1] === 'veers') {
-        let embed = new Discord.RichEmbed()
-            .setThumbnail('http://imgur.com/QUCNRZR.png')
-            .addField('General Veers', 'Aggressive Empire Support that becomes stronger as enemies are defeated.')
-            .addField('Daring Attack', 'Deal Physical damage to target enemy with a 70% chance each to grant Speed Up for 2 turns to General Veers and a random Imperial Trooper ally who doesn\'t have it.')
-            .addField('Ruthless Assault', 'Deal Special damage to all enemies with a 55% chance to inflict Ability Block for 1 turn, dealing 10% more damage for each living Rebel enemy. Call all other Imperial Trooper allies to assist, dealing 40% less damage.')
-            .addField('Imperial Assault Commander', 'Empire allies gain 30% Offense. Imperial Trooper allies gain 20 Speed and gain 10% Turn Meter whenever they gain a buff.')
-            .addField('Aggresive Tactician', 'Whenever an enemy is defeated while Veers is active, Imperial Trooper allies gain Offense Up for 2 turns, gain 50% Turn Meter, and recover 10% Protection. While Veers is active, Imperial Trooper allies have +15% Critical Chance.')
-            .setColor('0xFF0000')
-            message.author.send({embed: embed});
-    } else
+
+
+
+
+
+
+
+
+
+
+
 
 
 

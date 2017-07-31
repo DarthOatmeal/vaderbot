@@ -26,6 +26,12 @@ fs.readdir("./cmds/", (err, files) => {
     });
 });
 
+//Guild Member Join
+bot.on('guildMemberAdd', member => {
+    let guild = member.guild;
+    guild.defaultChannel.sendMessage('Welcome ' + member.user.username + ', our newest Imperial Cadet! Please type \"!help\" in the general channel to get a list of bot commands. Please review the guild rules as well.')
+});
+
 //Bot Online
 bot.on("ready", async () => {
 	console.log(`My name is ${bot.user.username} and I am ready to serve.`);
