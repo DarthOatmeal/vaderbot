@@ -4,6 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     let embed = new Discord.RichEmbed()
         .addField('!ability', 'Gives a swgoh.gg link to the specified character along with a list of recommended mods.')
+        .addField('!energy', 'Provides a link to the Daily Energy Spent / Raid Ticket Generation Spreadsheet.')
         .addField('!activity', 'Shows how to maximize guild tokens for the specified day.')
         .addField('!help', 'Displays info for all available commands.')
         .addField('!kylo', 'Diplays a random picture of Kylo Ren.')
